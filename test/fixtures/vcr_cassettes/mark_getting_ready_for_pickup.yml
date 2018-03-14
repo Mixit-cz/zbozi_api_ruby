@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.slevomat.cz/zbozi-api/v1-test/order/1234/mark-getting-ready-for-pickup
+    body:
+      encoding: UTF-8
+      string: '{"autoMarkDelivered":true}'
+    headers:
+      X-Partnertoken:
+      - ENV['TOKEN']
+      X-Apisecret:
+      - ENV['API_SECRET']
+      User-Agent:
+      - Faraday v0.14.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Mar 2018 10:12:12 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - X-Requested-With
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - SID=srha1st38mpevbi5edv52b7q0722jg1eepng58l1pquv2g6a; expires=Tue, 13-Mar-2018
+        10:12:12 GMT; Max-Age=86400; path=/; domain=.slevomat.cz; secure; HttpOnly
+      X-Hostname:
+      - bubik.stable.cz
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=0; report-uri="https://slevomat.report-uri.com/r/d/ct/reportOnly"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Xss-Protection:
+      - 1; mode=block; report=/xsslog
+    body:
+      encoding: ASCII-8BIT
+      string: '{"expectedDeliveryDate":"2018-03-15"}'
+    http_version: 
+  recorded_at: Mon, 12 Mar 2018 10:12:12 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,53 @@
+PATH
+  remote: .
+  specs:
+    zbozi_api_ruby (0.1.0)
+      faraday (~> 0.14, >= 0.14.0)
+      faraday_middleware (~> 0.12.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    coderay (1.1.2)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    dotenv (2.2.1)
+    faraday (0.14.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.12.2)
+      faraday (>= 0.7.4, < 1.0)
+    hashdiff (0.3.7)
+    method_source (0.8.2)
+    minitest (5.11.3)
+    multipart-post (2.0.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    public_suffix (3.0.2)
+    rake (10.5.0)
+    safe_yaml (1.0.4)
+    slop (3.6.0)
+    vcr (4.0.0)
+    webmock (3.3.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  dotenv (~> 2.2, >= 2.2.1)
+  minitest (~> 5.0)
+  pry (~> 0.10.3)
+  rake (~> 10.0)
+  vcr (~> 4.0)
+  webmock (~> 3.3)
+  zbozi_api_ruby!
+
+BUNDLED WITH
+   1.16.1

@@ -5,7 +5,8 @@ class ZboziApiRubyTest < Minitest::Test
     refute_nil ::ZboziApiRuby::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_is_correct_kind_and_initially_uncofigured
+    assert_kind_of ::ZboziApiRuby::Client, ZboziApiRuby.client
+    assert_nil ZboziApiRuby.client.configuration
   end
 end
