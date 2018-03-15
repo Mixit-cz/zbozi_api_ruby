@@ -1,4 +1,5 @@
 # ZboziApiRuby
+[![Build Status](https://www.travis-ci.org/Mixit-cz/zbozi_api_ruby.svg?branch=master)](https://www.travis-ci.org/Mixit-cz/zbozi_api_ruby)[![Maintainability](https://api.codeclimate.com/v1/badges/0966264451aa3fd9d281/maintainability)](https://codeclimate.com/github/Mixit-cz/zbozi_api_ruby/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/0966264451aa3fd9d281/test_coverage)](https://codeclimate.com/github/Mixit-cz/zbozi_api_ruby/test_coverage)
 
 This Ruby client library for the [Slevomat Zbozi API](https://www.slevomat.cz/partner/zbozi-api#komunikace-partner-slevomat). It provides an easy way to interact with the Slevomat Zbozi API in any kind of application.
 
